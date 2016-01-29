@@ -7,19 +7,19 @@
 2.完毕以后,需要将iscms\Alisms\AlidayuServiceProvider::class添加到config\app.php的providers下
 3.请运行php artisan vendor:publish将所需要的配置文件发布到您的config目录
 4.您的config目录应该增加了alisms配置文件
-
+`
 <?php
 return [
     'KEY' =>env('ALISMS_KEY',null),
     'SECRETKEY'=>env('ALISMS_SECRETKEY',null),
 ];
-
+`
 
 您可以将您的配置项写入env文件
 在您的控制器使用use iscms\Alisms\SendsmsPusher as Sms;
 
-
-       public function __construct(Sms $sms)
+`
+public function __construct(Sms $sms)
        {
                 $this->sms=$sms;
        }
@@ -33,3 +33,4 @@ return [
        {
            $result=$this->sms->send('$phone','$name',"$content",'$code');
        }
+`
