@@ -21,17 +21,17 @@ return [
 
 `
 public function __construct(Sms $sms)
-       {
+{
                 $this->sms=$sms;
-       }
-       /**
-       * @param $phone 接收人手机号码
-       * @param $name  短信签名,可以在阿里大鱼的管理中心看到
-       * @param $content 内容 应该以json格式传入"{'code':'1234','product':'alidayu'}"对应模板中的字符
-       * @param $code 短信模板编号 exp:SMS_4955428 在阿里大鱼里找
-       */
-       public function index()
-       {
+}
+/**
+* @param $phone 接收人手机号码
+* @param $name  短信签名,可以在阿里大鱼的管理中心看到
+* @param $content 内容 应该以json格式传入"{'code':'1234','product':'alidayu'}"对应模板中的字符
+* @param $code 短信模板编号 exp:SMS_4955428 在阿里大鱼里找
+*/
+public function index()
+{
            $result=$this->sms->send('$phone','$name',"$content",'$code');
-       }
+}
 `
