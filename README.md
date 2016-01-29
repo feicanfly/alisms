@@ -16,7 +16,7 @@
 ```
 
 您可以将您的配置项写入env文件
-在您的控制器使用use iscms\Alisms\SendsmsPusher as Sms;
+在您的控制器使用use iscms\Alisms\SendsmsPusher as Sms; 
 
 ```php
     public function __construct(Sms $sms)
