@@ -7,6 +7,7 @@
 2.完毕以后,需要将iscms\Alisms\AlidayuServiceProvider::class添加到config\app.php的providers下
 3.请运行php artisan vendor:publish将所需要的配置文件发布到您的config目录
 4.您的config目录应该增加了alisms配置文件
+
 `
 <?php
 return [
