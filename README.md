@@ -21,7 +21,7 @@
 ```php
     public function __construct(Sms $sms)
     {
-                        $this->sms=$sms;
+       $this->sms=$sms;
     }
     /**
     * @param $phone 接收人手机号码
