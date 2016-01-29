@@ -1,12 +1,11 @@
-# alisms
-针对阿里大鱼的Laravel-5封装
+# Alisms - iscms中针对阿里大鱼的Laravel-5封装
 
-使用方法:
+###使用方法:
 
-1.使用命令行定位到您的项目下运行composer require iscms/alisms-for-laravel
-2.完毕以后,需要将iscms\Alisms\AlidayuServiceProvider::class添加到config\app.php的providers下
-3.请运行php artisan vendor:publish将所需要的配置文件发布到您的config目录
-4.您的config目录应该增加了alisms配置文件
+1. 使用命令行定位到您的项目下运行composer require iscms/alisms-for-laravel
+2. 完毕以后,需要将iscms\Alisms\AlidayuServiceProvider::class添加到config\app.php的providers下
+3. 请运行php artisan vendor:publish将所需要的配置文件发布到您的config目录
+4. 您的config目录应该增加了alisms配置文件
 
 ```php
 <?php
