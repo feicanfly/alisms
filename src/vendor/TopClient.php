@@ -50,6 +50,9 @@ Class TopClient
 	public function curl($url, $postFields = null)
 	{
 		$ch = curl_init();
+		if (env('PROXY')) {
+            curl_setopt ($ch, CURLOPT_PROXY, env('PROXY'));
+        }
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_FAILONERROR, false);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
